@@ -35,6 +35,12 @@
      background-color: rgb(34, 49, 69) !important;
 }
 
+.card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+
 .card .card-price {
      position: absolute;
     right: 0.25rem;
@@ -77,10 +83,22 @@ footer.jumbotron {
      background-image: none;
 }
 
-@media (min-width: 576px) {
-     .card-columns {
-          -webkit-column-count: 4;
-          -moz-column-count: 4;
-          column-count: 4;
-     }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .jumbotron .intro .ctn {
+        font-size: 0.95rem;
+    }
+    .jumbotron .home {
+        margin: auto;
+    }
+    .jumbotron .building {
+        display: none;
+    }
+    .jumbotron input.form-control {
+        font-size: 1rem;
+    }
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
 }

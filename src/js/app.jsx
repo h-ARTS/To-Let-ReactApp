@@ -30,29 +30,31 @@ IntroFormHandler.Header = React.createClass({
           return(
                <div className="container">
                     <div className="row">
-                         <div className="col-4">
+                         <div className="col-4 intro">
                               <h1 className="display-4">{this.props.heading}</h1>
                               <p className="lead">{this.props.lead}</p>
-                              <a href="#" className="btn btn-lg btn-primary">Rent your Property out!</a>
+                              <a href="#" className="btn btn-lg btn-primary ctn">Rent your Property out!</a>
                          </div>
                          <div className="col-3 d-flex">
-                              <h1 className="icon text-center pr-3 pt-1-25">
+                              <h1 className="icon pr-lg-3 pr-md-0 pt-1-25 text-center home">
                                    <i className="fa fa-home" aria-hidden="true"></i>
                               </h1>
-                              <h1 className="icon text-center">
+                              <h1 className="icon text-center building">
                                    <i className="fa fa-building" aria-hidden="true"></i>
                               </h1>
                          </div>
-                         <div className="bg-transparent col-4 p-3 push-1 rounded">
-                              <h2 className="display-5 mb-3">Find your new Home</h2>
-                              <form onSubmit={this.onFormSubmit} className="form-group">
-                                   <div className="input-group input-group-lg">
-                                        <input id="search" type="text" className="form-control" placeholder="I'm searching in..." ref="search" />
-                                        <span className="input-group-btn">
-                                             <button className="btn btn-primary">Go!</button>
-                                        </span>
-                                    </div>
-                              </form>
+                         <div className="col-md-5 col-xl-4 push-xl-1">
+                            <div className="bg-transparent p-3 mt-lg-4 rounded">
+                                <h2 className="display-5 mb-3">Find your new Home</h2>
+                                <form onSubmit={this.onFormSubmit} className="form-group">
+                                    <div className="input-group input-group-lg">
+                                            <input id="search" type="text" className="form-control" placeholder="I'm searching in..." ref="search" />
+                                            <span className="input-group-btn">
+                                                <button className="btn btn-primary">Go!</button>
+                                            </span>
+                                        </div>
+                                </form>
+                            </div>
                          </div>
                     </div>
                </div>
