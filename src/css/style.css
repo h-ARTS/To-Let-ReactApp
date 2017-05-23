@@ -1,0 +1,86 @@
+.pt-1-25 {
+     padding-top: 1.25rem;
+}
+
+.display-5 {
+     font-weight: 300;
+}
+
+.jumbotron {
+     background: rgba(20,30,48,1);
+     background: -moz-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(20,30,48,1)), color-stop(100%, rgba(36,59,85,1)));
+     background: -webkit-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: -o-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: -ms-linear-gradient(-45deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     background: linear-gradient(135deg, rgba(20,30,48,1) 0%, rgba(36,59,85,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141e30', endColorstr='#243b55', GradientType=1 );
+     color: #fff;
+}
+
+.jumbotron .icon {
+     font-size: 9rem;
+}
+
+.jumbotron .bg-transparent{
+     background-color: rgba(255, 255, 255, 0.10);
+}
+
+.jumbotron input {
+     background-color: rgb(34, 49, 63) !important;
+     color: #fff !important;
+}
+
+.jumbotron input:-webkit-autofill {
+     background-color: rgb(34, 49, 69) !important;
+}
+
+.card .card-price {
+     position: absolute;
+    right: 0.25rem;
+    margin-top: -38px;
+}
+
+.card .card-price .badge {
+     font-weight: 500;
+}
+
+.card .card-title {
+     color: #22313f;
+     font-size: 1.3rem;
+}
+
+.card p.lead {
+     font-weight: 400;
+}
+
+.card .card-footer .badge-lila {
+     background-color: #9b59b6;
+     font-size: 0.75rem;
+}
+
+.card .card-block .btn-ctn {
+     color: #fff;
+     background-color: #D64541;
+     border-color: #c7413d;
+}
+
+.card .card-block .btn-ctn:hover {
+     color: #fff;
+     background-color: #b93d39;
+     border-color: #b93d39;
+}
+
+footer.jumbotron {
+     border-top: 1px solid #e3e3e3 !important;
+     background-color: #fff !important;
+     background-image: none;
+}
+
+@media (min-width: 576px) {
+     .card-columns {
+          -webkit-column-count: 4;
+          -moz-column-count: 4;
+          column-count: 4;
+     }
+}
