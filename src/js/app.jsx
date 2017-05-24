@@ -30,12 +30,12 @@ IntroFormHandler.Header = React.createClass({
           return(
                <div className="container">
                     <div className="row">
-                         <div className="col-4 intro">
+                         <div className="col-12 col-md-4 col-sm-6 intro">
                               <h1 className="display-4">{this.props.heading}</h1>
                               <p className="lead">{this.props.lead}</p>
                               <a href="#" className="btn btn-lg btn-primary ctn">Rent your Property out!</a>
                          </div>
-                         <div className="col-3 d-flex">
+                         <div className="col-6 col-sm-6 col-md-3 d-flex icons">
                               <h1 className="icon pr-lg-3 pr-md-0 pt-1-25 text-center home">
                                    <i className="fa fa-home" aria-hidden="true"></i>
                               </h1>
@@ -43,7 +43,7 @@ IntroFormHandler.Header = React.createClass({
                                    <i className="fa fa-building" aria-hidden="true"></i>
                               </h1>
                          </div>
-                         <div className="col-md-5 col-xl-4 push-xl-1">
+                         <div className="col-12 col-sm-12 col-md-5 col-xl-4 push-xl-1 search-field">
                             <div className="bg-transparent p-3 mt-lg-4 rounded">
                                 <h2 className="display-5 mb-3">Find your new Home</h2>
                                 <form onSubmit={this.onFormSubmit} className="form-group">
@@ -102,7 +102,7 @@ var FlatListings = React.createClass({
           });
           return(
                <div className="container">
-                    <p className="bg-inverse col-12 lead p-2 rounded text-center text-white">Search Results for: <small className="text-info">{input}</small></p>
+                    <p className="bg-inverse col-12 lead p-2 rounded text-center text-white">Search Results of: <small className="text-info">{input}</small></p>
                     <div className="card-columns">
                          {(flats.length > 0) ? flats : <h4 className="d-inline-block display-5">No Properties available in {input}...</h4>}
                     </div>

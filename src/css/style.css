@@ -102,3 +102,84 @@ footer.jumbotron {
         column-count: 3;
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    .jumbotron .intro .ctn {
+        font-size: 0.95rem;
+    }
+    .jumbotron .icon {
+        font-size: 8.5rem;
+    }
+    .jumbotron .home {
+        margin-right: 0.25rem !important;
+    }
+    .jumbotron .building {
+        margin-top: 0.05rem;
+    }
+    .jumbotron .search-field {
+        margin-top: 1.25rem;
+    }
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .card {
+        display: inline-block;
+        margin-bottom: 1rem;    
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .jumbotron .intro {
+        text-align: center;
+    }
+    .jumbotron .search-field {
+        margin-top: 0;
+    }
+    .display-5 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .jumbotron .icons {
+        display: none !important;
+    }
+    .jumbotron .bg-transparent {
+        margin-top: 1.5rem;
+    }
+    .form-control {
+        font-size: 1rem;
+    }
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 575px) and (orientation: landscape) {
+    .jumbotron .intro {
+        -webkit-box-flex: 0 !important;
+        -webkit-flex: 0 0 41.666667% !important;
+        -ms-flex: 0 0 41.666667% !important;
+        flex: 0 0 41.666667% !important;
+        max-width: 41.666667% !important;
+        text-align: left !important;
+    }
+    .jumbotron .search-field {
+        -webkit-box-flex: 0 !important;
+        -webkit-flex: 0 0 58.333333% !important;
+        -ms-flex: 0 0 58.333333% !important;
+        flex: 0 0 58.333333% !important;
+        max-width: 58.333333% !important;
+    }
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .display-5 {
+        text-align: left !important;
+    }
+}
